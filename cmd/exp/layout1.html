@@ -1,0 +1,12 @@
+{{template "header"}}
+
+<!-- {{template "content"}}
+{{define "content"}}
+<p>este é o conteudo default</p>
+{{end}} -->
+
+{{block "content" .}}
+<p>este é o conteudo default</p>
+{{end}}
+
+{{template "footer" .}}
